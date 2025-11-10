@@ -1,0 +1,389 @@
+[
+  {
+    "city": "Ashburn, VA",
+    "data_centers": 48,
+    "tooltips": {
+      "environmental": "Ashburn, VA: Cluster of 48 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Dallas, TX",
+    "data_centers": 46,
+    "tooltips": {
+      "environmental": "Dallas, TX: Cluster of 46 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Santa Clara, CA",
+    "data_centers": 38,
+    "tooltips": {
+      "environmental": "Santa Clara, CA: Cluster of 38 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Chicago, IL",
+    "data_centers": 37,
+    "tooltips": {
+      "environmental": "Chicago, IL: Cluster of 37 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Los Angeles, CA",
+    "data_centers": 37,
+    "tooltips": {
+      "environmental": "Los Angeles, CA: Cluster of 37 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Atlanta, GA",
+    "data_centers": 33,
+    "tooltips": {
+      "environmental": "Atlanta, GA: Cluster of 33 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "New York, NY",
+    "data_centers": 26,
+    "tooltips": {
+      "environmental": "New York, NY: Cluster of 26 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Phoenix, AZ",
+    "data_centers": 23,
+    "tooltips": {
+      "environmental": "Phoenix, AZ: Cluster of 23 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Houston, TX",
+    "data_centers": 21,
+    "tooltips": {
+      "environmental": "Houston, TX: Cluster of 21 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Hillsboro, OR",
+    "data_centers": 20,
+    "tooltips": {
+      "environmental": "Hillsboro, OR: Cluster of 20 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Sterling, VA",
+    "data_centers": 19,
+    "tooltips": {
+      "environmental": "Sterling, VA: Cluster of 19 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Miami, FL",
+    "data_centers": 19,
+    "tooltips": {
+      "environmental": "Miami, FL: Cluster of 19 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Seattle, WA",
+    "data_centers": 18,
+    "tooltips": {
+      "environmental": "Seattle, WA: Cluster of 18 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "San Jose, CA",
+    "data_centers": 18,
+    "tooltips": {
+      "environmental": "San Jose, CA: Cluster of 18 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Plano, TX",
+    "data_centers": 16,
+    "tooltips": {
+      "environmental": "Plano, TX: Cluster of 16 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Austin, TX",
+    "data_centers": 15,
+    "tooltips": {
+      "environmental": "Austin, TX: Cluster of 15 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Secaucus, NJ",
+    "data_centers": 13,
+    "tooltips": {
+      "environmental": "Secaucus, NJ: Cluster of 13 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Tampa, FL",
+    "data_centers": 12,
+    "tooltips": {
+      "environmental": "Tampa, FL: Cluster of 12 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Denver, CO",
+    "data_centers": 12,
+    "tooltips": {
+      "environmental": "Denver, CO: Cluster of 12 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Manassas, VA",
+    "data_centers": 12,
+    "tooltips": {
+      "environmental": "Manassas, VA: Cluster of 12 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Richardson, TX",
+    "data_centers": 11,
+    "tooltips": {
+      "environmental": "Richardson, TX: Cluster of 11 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Elk Grove Village, IL",
+    "data_centers": 11,
+    "tooltips": {
+      "environmental": "Elk Grove Village, IL: Cluster of 11 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Philadelphia, PA",
+    "data_centers": 10,
+    "tooltips": {
+      "environmental": "Philadelphia, PA: Cluster of 10 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Lithia Springs, GA",
+    "data_centers": 9,
+    "tooltips": {
+      "environmental": "Lithia Springs, GA: Cluster of 9 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Charlotte, NC",
+    "data_centers": 9,
+    "tooltips": {
+      "environmental": "Charlotte, NC: Cluster of 9 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "San Antonio, TX",
+    "data_centers": 9,
+    "tooltips": {
+      "environmental": "San Antonio, TX: Cluster of 9 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Reston, VA",
+    "data_centers": 7,
+    "tooltips": {
+      "environmental": "Reston, VA: Cluster of 7 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "San Diego, CA",
+    "data_centers": 7,
+    "tooltips": {
+      "environmental": "San Diego, CA: Cluster of 7 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Englewood, CO",
+    "data_centers": 7,
+    "tooltips": {
+      "environmental": "Englewood, CO: Cluster of 7 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Quincy, WA",
+    "data_centers": 7,
+    "tooltips": {
+      "environmental": "Quincy, WA: Cluster of 7 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Pittsburgh, PA",
+    "data_centers": 7,
+    "tooltips": {
+      "environmental": "Pittsburgh, PA: Cluster of 7 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Columbus, OH",
+    "data_centers": 7,
+    "tooltips": {
+      "environmental": "Columbus, OH: Cluster of 7 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Mesa, AZ",
+    "data_centers": 7,
+    "tooltips": {
+      "environmental": "Mesa, AZ: Cluster of 7 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "El Segundo, CA",
+    "data_centers": 7,
+    "tooltips": {
+      "environmental": "El Segundo, CA: Cluster of 7 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Salt Lake City, UT",
+    "data_centers": 6,
+    "tooltips": {
+      "environmental": "Salt Lake City, UT: Cluster of 6 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Piscataway, NJ",
+    "data_centers": 6,
+    "tooltips": {
+      "environmental": "Piscataway, NJ: Cluster of 6 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Centennial, CO",
+    "data_centers": 6,
+    "tooltips": {
+      "environmental": "Centennial, CO: Cluster of 6 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "San Francisco, CA",
+    "data_centers": 6,
+    "tooltips": {
+      "environmental": "San Francisco, CA: Cluster of 6 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Boston, MA",
+    "data_centers": 6,
+    "tooltips": {
+      "environmental": "Boston, MA: Cluster of 6 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Las Vegas, NV",
+    "data_centers": 6,
+    "tooltips": {
+      "environmental": "Las Vegas, NV: Cluster of 6 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Irvine, CA",
+    "data_centers": 6,
+    "tooltips": {
+      "environmental": "Irvine, CA: Cluster of 6 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Sunnyvale, CA",
+    "data_centers": 6,
+    "tooltips": {
+      "environmental": "Sunnyvale, CA: Cluster of 6 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  },
+  {
+    "city": "Tukwila, WA",
+    "data_centers": 6,
+    "tooltips": {
+      "environmental": "Tukwila, WA: Cluster of 6 data centers adds grid & water strain; noise & emissions affect nearby areas.",
+      "policy": "Local plans urge stricter zoning, efficiency standards, and renewable energy use.",
+      "community": "Residents call for transparency, monitoring, and community benefits."
+    }
+  }
+]
