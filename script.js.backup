@@ -1,0 +1,152 @@
+// Small interactive helpers: mobile nav toggle, set year, and dummy form handler
+// Initialize variables
+let map;
+let markers = [];
+let dataCenters = [];
+let markerLayer;
+let tooltipsMap = {};
+
+// Function to update company filter
+function updateCompanyFilter() {
+    const uniqueCompanies = [...new Set(dataCenters.map(dc => dc.company))].sort();
+    const filterSelect = document.getElementById('companyFilter');
+    
+    // Clear existing options
+    filterSelect.innerHTML = '<option value="all">All Companies</option>';
+    
+    // Add new options
+    uniqueCompanies.forEach(company => {
+        const option = document.createElement('option');
+        option.value = company;
+        option.textContent = company;
+        filterSelect.appendChild(option);
+    });
+}
+
+async function initMap() {
+    try {
+        // Create the map centered on US
+        map = L.map('mapContainer').setView([39.8283, -98.5795], 4);
+        
+        // Add the tile layer (OpenStreetMap)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Create a layer group for markers
+        markerLayer = L.layerGroup().addTo(map);
+
+        // Show loading message
+        document.querySelector('.map-legend').innerHTML = '<p>Loading data centers...</p>';
+        
+        // Fetch both JSON files
+        console.log('Fetching data...');
+        const [dataCentersResponse, tooltipsResponse] = await Promise.all([
+            fetch('./assets/data_centers.json'),
+            fetch('./assets/city_tooltip_blurbs_map.json')
+        ]);
+
+function displayMarkers(filter = 'all') {
+    // Clear existing markers
+    markerLayer.clearLayers();
+    markers = [];
+
+    // Filter data centers
+    const filtered = filter === 'all' 
+        ? dataCenters 
+        : dataCenters.filter(dc => dc.company === filter);
+
+    // Update count
+    document.getElementById('locationCount').textContent = filtered.length;
+
+    // Add new markers
+    filtered.forEach(dc => {
+        const cityKey = `${dc.city}, ${dc.state}`;
+        const tooltipData = tooltipsMap[cityKey];
+        
+        let popupContent = `
+            <div class="popup-content">
+                <h3>${dc.company}</h3>
+                <p><strong>${dc.site}</strong></p>
+                <p>${dc.city}, ${dc.state}</p>
+        `;
+        
+        if (tooltipData) {
+            popupContent += `
+                <div class="popup-details">
+                    <div class="tooltip-section">
+                        <h4>Environmental Impact</h4>
+                        <p>${tooltipData.tooltips.environmental}</p>
+                    </div>
+                    <div class="tooltip-section">
+                        <h4>Policy Response</h4>
+                        <p>${tooltipData.tooltips.policy}</p>
+                    </div>
+                    <div class="tooltip-section">
+                        <h4>Community Voice</h4>
+                        <p>${tooltipData.tooltips.community}</p>
+                    </div>
+                </div>
+            `;
+        }
+        
+        popupContent += '</div>';
+        
+        const marker = L.marker([dc.latitude, dc.longitude])
+            .bindPopup(popupContent, {
+                maxWidth: 400,
+                className: 'custom-popup'
+            });
+            
+        markers.push(marker);
+        markerLayer.addLayer(marker);
+    });
+
+    // If filtering, fit bounds to shown markers
+    if (filter !== 'all' && markers.length > 0) {
+        const group = L.featureGroup(markers);
+        map.fitBounds(group.getBounds(), { padding: [50, 50] });
+    } else {
+        map.setView([39.8283, -98.5795], 4);
+    }
+}
+
+function filterMarkers() {
+    const filter = document.getElementById('companyFilter').value;
+    displayMarkers(filter);
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Initialize the map if the container exists
+    const mapContainer = document.getElementById('mapContainer');
+    if (mapContainer) {
+        initMap();
+    }
+  const nav = document.getElementById('primary-navigation');
+  const toggle = document.querySelector('.nav-toggle');
+
+  if (toggle && nav) {
+    toggle.addEventListener('click', function () {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      // prefer toggling an attribute for CSS, but simple inline style works in this starter
+      if (!expanded) nav.style.display = 'block'; else nav.style.display = 'none';
+    });
+  }
+
+  // Set the footer year
+  const yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // Contact form: prevent default and show a friendly message (demo-only)
+  const form = document.getElementById('contact-form');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = (form.name && form.name.value) ? form.name.value.trim() : '';
+      window.alert(`Thanks ${name || 'there'}! This demo does not send messages.`);
+      form.reset();
+    });
+  }
+});

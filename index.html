@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>The Cost of Powering Progress</title>
+  <meta name="description" content="An interactive project analyzing the costs, benefits, and community impact of data centers in America.">
+  <meta name="theme-color" content="#0A1F44">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="#home">
+        <img src="assets/logo.svg" alt="The Cost of Powering Progress logo" class="logo-img">
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+      <nav id="primary-navigation" class="nav" aria-expanded="false">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#map">Map</a></li>
+          <li><a href="#impact">Impact</a></li>
+          <li><a href="#resources">Resources</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-image">
+          <img src="assets/photo3.webp" alt="Data center view" class="feature-image">
+        </div>
+        <h1>Powering the Digital World Comes at a Cost</h1>
+        <p>Discover how the rise of data centers is transforming local communities — from energy use and job creation to policy challenges and sustainability.</p>
+        <a class="btn" href="#map">Explore the map</a>
+      </div>
+    </section>
+
+    <section id="impact" class="features container">
+      <h2>Key Topics</h2>
+      <div class="grid">
+        <article>
+          <h3>Energy &amp; Environment</h3>
+          <p>Examine how much energy data centers consume and the renewable sources they use.</p>
+        </article>
+        <article>
+          <h3>Local Economies</h3>
+          <p>Understand the job creation and tax incentives driving local investments.</p>
+        </article>
+        <article>
+          <h3>Policy &amp; Planning</h3>
+          <p>Review local and federal policies that shape how data centers operate.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <h2>About</h2>
+      
+      <h3>What Are Data Centers?</h3>
+      <p>Data centers are large facilities that store and manage the data that powers digital services such as cloud computing, social media, and artificial intelligence. They contain thousands of servers running constantly to process information and deliver it quickly across the internet.</p>
+      
+      <div class="about-grid">
+        <div class="about-item">
+          <h3>Environmental Burden</h3>
+          <p>Data centers use huge amounts of electricity and water. In 2023, U.S. data centers consumed about 176 terawatt-hours of electricity—around 4% of total national power use—and that share is expected to rise. Cooling systems often account for more than 40% of their energy use and can require millions of gallons of water each year. Many data centers still rely on fossil fuels, producing greenhouse gas emissions and air pollutants. The construction of large facilities also replaces farmland or green areas with industrial buildings, increasing noise, traffic, and heat.</p>
+        </div>
+
+        <div class="about-item">
+          <h3>Policy Response</h3>
+          <p>Local and state governments are creating policies to manage these effects. Some cities have updated zoning codes to limit where data centers can be built and to control noise and water use. Others require annual reporting of electricity and water consumption to promote transparency. Certain communities tie tax incentives to benefits such as renewable energy investment, workforce training, and green infrastructure projects. These actions help balance economic growth with sustainability and public health.</p>
+        </div>
+
+        <div class="about-item">
+          <h3>Community Voice</h3>
+          <p>Residents near data centers have raised concerns about noise, higher energy costs, and environmental impacts. Many communities are pushing for public hearings, stricter environmental standards, and agreements that require developers to contribute to local projects. Activists advocate for better transparency, renewable energy use, and investment in community resources like parks and education programs.</p>
+        </div>
+      </div>
+
+      <div class="about-summary">
+        <h3>Summary</h3>
+        <p>Data centers are essential for the digital economy but come with significant local impacts. With thoughtful policy and active community involvement, cities can encourage responsible development that supports innovation while protecting the environment and the well-being of nearby residents.</p>
+      </div>
+    </section>
+
+    <section id="map" class="map container">
+      <h2>Data Center Locations</h2>
+      <div class="map-controls">
+        <div class="filter-group">
+          <label for="companyFilter">Filter by Company:</label>
+          <select id="companyFilter">
+            <option value="all">All Companies</option>
+          </select>
+        </div>
+        <div class="filter-stats">
+          <span id="locationCount">Loading...</span> locations shown
+        </div>
+      </div>
+      <div id="mapContainer"></div>
+      <div class="map-legend">
+        <p>Click markers to see data center details</p>
+        <div class="legend-item">
+          <span class="legend-dot blue"></span>
+          <span>Cities with impact details available</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot grey"></span>
+          <span>Basic location information only</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="resources container">
+      <h2>AI Impact Analysis</h2>
+      <p>Ask about environmental and social impacts of data centers in specific locations.</p>
+
+      <!-- Chatbase embed will inject the chat UI here -->
+      <div id="chatbase-root"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> My Website</div>
+  </footer>
+
+  <script src="script.js" defer></script>
+
+  <script>
+  (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="7887gkMU7jGbl5QVXdz9z";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+  </script>
+</body>
+</html>
